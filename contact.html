@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page with Header and Footer</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">Gunjan.</a>
+        <nav class="navbar">
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <!-- Main content with background image and hover effect -->
+        <div class="background-image">
+            <div class="message">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Explore my work and projects. Creativity meets professionalism.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>CONTACT</h3>
+                <p>Jyoti nagar West Arjun nagar,<br>Agra Uttar Pradesh</p>
+                <p>Tel: 7417721330<br>Fax: 7417721330</p>
+                <p><a href="mailto:gunjankumari12082004@gmail.com">gunjankumari12082004@gmail.com</a></p>
+                <div class="socials">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                </div>
+            </div>
+           
+            <form class="about-me" id="contactForm">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email *" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 by Personal Life Coach. Created by Gunjan.</p>
+        </div>
+    </footer>
+
+    <script> document.getElementById("contactForm").addEventListener("submit", function(event){
+        event.preventDefault(); // Prevent the form from submitting normally
+        
+        // Assuming form submission logic goes here (e.g., sending data to a server)
+        
+        // Reset the form fields
+        this.reset();
+    
+        // Optionally, display a message to the user
+        alert("Thank you for your message!");
+    });
+    </script>
+</body>
+</html>
